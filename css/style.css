@@ -10,10 +10,17 @@
     line-height: 1.6rem;
     list-style: none;
   }
-  header {
+  #navbar {
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+ header{
     background: url('../images/sarah2.jpg') no-repeat center center/cover;
     height:100vh;
-  }
+  }  
   .logo{
     padding:1.5rem;
     padding-left:7rem;
@@ -38,9 +45,10 @@ li{
 .container{
     display:flex;
     justify-content: space-between;
-    padding:2rem;
+    padding:1rem;
     margin:auto;
     text-align: left;
+    
 }
 .container1{
     flex-direction:column ;
@@ -62,9 +70,9 @@ li{
 }
 
 #showcase .showcase-content h1 {
-    margin-bottom:40px 40px;
-    padding-top:80px ;
-    line-height:7rem;
+    margin-bottom:80px 70px;
+    padding-top:175px ;
+    line-height:2rem;
     font-size:35px;
     font-weight: bold;
     
@@ -152,54 +160,153 @@ li{
     /* background: #4FD2BD; */
     background:#4FD2BD;
         
-} 
-.icons-grid  {
+}
+
+ .butn {
     
-    display: flex;
+ 
+   background-color:black;
+    border: none;
+    
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%; 
+}
+  
+.icongridformat  {
+    
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:4rem;
     background: #4FD2BD;
     color: #fff;
-    padding: 60px;
-    flex-flow: wrap;
+    padding: 40px;
+
     position: relative;
     justify-content: space-around;
  } 
 .fontawesome .fas{
 
     padding: 20px;
-        font-size: 40px;
+    font-size: 30px;
+    
 }
 .fontawesome .far{
 
     padding: 20px;
-        font-size: 40px;
+    font-size: 35px;
  }
 
 .fontawesome .icon-details {
 
-    margin: 20px;
- }
-/* .briefdescrp{
-    padding:50px;
-     display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     
-     padding-left:100px;
-     background: #4FD2BD;
-     color:#fff;
-} */
-img {
+     margin: 20px; 
+ } */
+ .icons-grid  {
+    display: flex;
+    background: #4FD2BD;
+    color: #fff;
+    padding: 20px;
+    flex-flow: wrap;
+    position: relative;
+    justify-content: space-around;
+}
+.fontawesome .fas{
+    padding: 20px;
+    font-size: 40px;
+}
+.fontawesome .far{
+    padding: 20px;
+    font-size: 40px;
+}
+.fontawesome .icon-details {
+    margin: 20px;  
+}
+
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    grid-template-areas: 
+    'img-1 img-2 img-3 img-4'
+    'img-5 img-6 img-7 img-8';
+}
+.image-gallery a {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.image-gallery a i {
+    color: rgba(225,225,225,0.6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(225,225,225,0.6);
+    border-radius: 0.4rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.image-gallery a::before {
+    content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity 0.5s;
 }
-
-.pictures {
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+    opacity: 1;
 }
-
-
+.img-1 {
+    grid-area: img-1;
+    background-image: url('../images/nordwood.jpg');
+}
+.img-2 {
+    grid-area: img-2;
+    background-image: url('../images/honey.jpg');
+}
+.img-3 {
+    grid-area: img-3;
+    background-image: url('../images/henry.jpg');
+}
+.img-4 {
+    grid-area: img-4;
+    background-image: url('../images/shampoo.jpg');
+}
+.img-5 {
+    grid-area: img-5;
+    background-image: url('../images/matteo.jpg');
+}
+.img-6 {
+    grid-area: img-6;
+    background-image: url('../images/showcase.jpg');
+}
+.img-7 {
+    grid-area: img-7;
+    background-image: url('../images/nakul.jpg');
+}
+.img-8 {
+    grid-area: img-8;
+    background-image: url('../images/davide.jpg');
+}
 .information{
     list-style: none;
     font-size:0.8rem;
@@ -216,26 +323,7 @@ img {
     line-height:1rem;
     
 }
-.workprocess.buttn {
-    position:absolute;
-    top: 70%;
-    left: 50%;
-     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); 
-    background-color: #26a815;
-    color: rgb(238, 232, 232);
-    font-size: 16px;
-    padding: 90px 70px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    align-items: center;
-  }
-.buttn:hover {
-    background-color: rgb(25, 170, 12);
-    color: white;
-}  
+
 .heading-title h2{
     color:black;
     padding:45px;
@@ -251,12 +339,48 @@ img {
     text-align:center;
 
 }
-/* .shortimage{ 
+.shortimage{ 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+    width: auto;
+    height:auto;
     
-    display:inline-block;
-   
-    width:85%;
-}*/
+    width:100%;
+}
+.heading-title.buttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 20px;
+
+     /* position:absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);  
+    background-color: #26a815;
+    color: rgb(238, 232, 232);
+    font-size: 16px;
+    padding: 90px 70px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: center;   */
+  }
+.buttn:hover {
+    background-color: rgb(25, 170, 12);
+    color: white;
+}  
 .development{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -372,12 +496,13 @@ img {
     background:rgb(24, 22, 153) ;
 }
 .footer-content{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns:repeat(5,1fr) ;
+    grid-gap:3rem;
     background:rgb(24, 23, 23) ;
     color:white;
     margin: auto;
-    padding:80px;
+    padding:90px;
   
 }
 
