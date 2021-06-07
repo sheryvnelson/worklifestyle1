@@ -128,23 +128,32 @@ li{
 }
   
  .section-title1{
+    padding-left: 70px;
+    width: 250%;
+    padding-bottom: 250px;
+    background: white;
+    height: 40%;
+    margin: 0 auto;
+    align-items: center;
     
-    
-    padding-left:70px;
+    /* padding-left:70px;
     width:250%;
     padding-bottom:250px;
     background:rgb(66, 62, 62);
     height:40%;
     margin:0 auto; 
     align-items: center;
-    
+     */
 }
+.rightsection{
+    width:50%;
+} 
 .rightsection  img{
-    width:165%;
-    
-    height:100%;
-    padding-top:30px ;
+    min-height: 430px;
+    max-height: 678px;
+    object-fit: cover;
 }
+
 .section-title1 h2{
 
     padding:0.4rem;
@@ -193,43 +202,19 @@ li{
     border-radius: 50%; 
 }
   
-.icongridformat  {
-    
+
+ .icongridformat  {
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap:4rem;
-    background: #4FD2BD;
-    color: #fff;
-    padding:10px;
-
-    position: relative;
-    justify-content: space-around;
- } 
-.fontawesome .fas{
-
-    padding: 20px;
-    font-size: 30px;
-    
-}
-.fontawesome .far{
-
-    padding: 20px;
-    font-size: 35px;
- }
-
-.fontawesome .icon-details {
-
-     margin: 20px; 
- } */
- .icons-grid  {
-    display:grid;
+    grid-gap:3rem;
+    justify-content: space-between;
 
     background: #4FD2BD;
     color: #fff;
-    padding: 20px;
-    flex-flow: wrap;
-    position: relative;
-    justify-content: space-around;
+    padding-left:50px;
+    /* flex-flow: wrap; */
+    position:relative;
+     
 }
 .fontawesome .fas{
     padding: 20px;
@@ -525,7 +510,7 @@ li{
 }
 .contact-form .formgroup textarea {
     text-align:left;
-    padding:20px;
+    padding:30px;
     height: 65px;
     width: 60%;
     border: #F5F5F5 solid 1px;
@@ -533,10 +518,10 @@ li{
 
 .bton{
     display: inline-block;
-    font-size:15px;
+    font-size:18px;
     color: #fff;
     background: #4FD2BD;
-    padding:20px 40px ;
+    padding:25px 45px ;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -551,7 +536,7 @@ li{
     background:rgb(48, 48, 48) ;
     color:white;
     margin: auto;
-    padding:90px;
+    padding:100px;
   
 }
 
