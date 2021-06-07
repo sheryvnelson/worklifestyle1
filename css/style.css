@@ -70,11 +70,12 @@ li{
 }
 
 #showcase .showcase-content h1 {
-    margin-bottom:80px 70px;
+    margin-bottom:90px 70px;
     padding-top:175px ;
-    line-height:2rem;
+    line-height:3rem;
     font-size:35px;
     font-weight: bold;
+
     
     
 }
@@ -85,6 +86,7 @@ li{
     margin-bottom:30px;
     font-size:20px;
     text-align: justify;
+
     
 }
 .showcase-content .button {
@@ -120,36 +122,49 @@ li{
     
   } */
 
-.section-title{
-    background: url('../images/bench.jpg') no-repeat center center/cover;
-    height:100vh;
+ .leftright{
+     display:flex;
     
-
 }
-.section-title1{
-    padding-left: 50px;
+  
+ .section-title1{
+    
+    
+    padding-left:70px;
+    width:250%;
+    padding-bottom:250px;
+    background:rgb(66, 62, 62);
+    height:40%;
+    margin:0 auto; 
+    align-items: center;
+    
 }
-
+.rightsection  img{
+    width:165%;
+    
+    height:100%;
+    padding-top:30px ;
+}
 .section-title1 h2{
 
-    padding:0.5rem;
-    padding-left:5rem;
+    padding:0.4rem;
+    padding-left:2rem;
     padding-top: 15rem;
     
 }
-/* .section-title1 p{
+ .section-title1 p{
 
     
-    padding-left:5rem;
-    padding-top: 1rem;
-     */
+    padding-left:0.2rem;
+    padding-top:1rem;
+ }    
 
 .section-title1 .progress {
     overflow: hidden;
-    height: 0.2em;
+    height: 0.5em;
     border-radius: 0.5em;
-    margin-bottom: 0.5em; 
-    width:500px;
+    margin-bottom: 0.2em; 
+    width:450px;
     /* padding-left: 30px; */
     
 }
@@ -160,7 +175,7 @@ li{
     /* background: #4FD2BD; */
     background:#4FD2BD;
         
-}
+} 
 
  .butn {
     
@@ -185,7 +200,7 @@ li{
     grid-gap:4rem;
     background: #4FD2BD;
     color: #fff;
-    padding: 40px;
+    padding:10px;
 
     position: relative;
     justify-content: space-around;
@@ -207,7 +222,8 @@ li{
      margin: 20px; 
  } */
  .icons-grid  {
-    display: flex;
+    display:grid;
+
     background: #4FD2BD;
     color: #fff;
     padding: 20px;
@@ -313,7 +329,7 @@ li{
     padding:30px;
     text-align:center;
     background:rgb(247, 246, 246) ;
-    color:rgb(194, 188, 188);
+    color:rgb(157, 152, 152);
     
 }
 .workprocess{
@@ -371,6 +387,16 @@ li{
     margin: 0 auto;
     z-index: 1;
 }
+.butn:hover{
+    background-color:rgb(114, 107, 107);
+}
+.fa-play{
+       font-size:25px; 
+       color:beige;
+       
+
+}
+
 
 /* button.buttn {
         display: flex;
@@ -459,9 +485,9 @@ li{
 }
 .contact-form{
     text-align:center;
-    padding:100px;
+    padding:150px;
     background:rgb(237, 234, 234);
-    line-height: 4rem;
+    line-height: 5rem;
 
 
 
@@ -486,22 +512,22 @@ li{
     
 }
 .contact-form .formgroup1 input {
-    width: 25%;
+    width: 30%;
     padding: 4px;
-    height: 40px;
+    height: 70px;
     border: #F5F5F5 solid 1px;
 }
 .contact-form .formgroup input {
-    width: 50%;
+    width: 60%;
     padding: 4px;
-    height: 40px;
+    height: 65px;
     border: #F5F5F5 solid 1px;
 }
 .contact-form .formgroup textarea {
-    text-align: left;
-    padding: 4px;
-    height: 80px;
-    width: 50%;
+    text-align:left;
+    padding:20px;
+    height: 65px;
+    width: 60%;
     border: #F5F5F5 solid 1px;
 }
 
@@ -510,7 +536,7 @@ li{
     font-size:15px;
     color: #fff;
     background: #4FD2BD;
-    padding:14px 40px ;
+    padding:20px 40px ;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -522,7 +548,7 @@ li{
     display:grid;
     grid-template-columns:repeat(5,1fr) ;
     grid-gap:3rem;
-    background:rgb(24, 23, 23) ;
+    background:rgb(48, 48, 48) ;
     color:white;
     margin: auto;
     padding:90px;
